@@ -1,0 +1,47 @@
+algoritmo "mmc"
+//Baixo peso IMC < 18,5
+//Peso normal IMC 18,5 - 24,9
+//Excesso de peso IMC 25 - 29,9
+//Obesidade IMC >30
+//Obesidade grau I (Moderada) IMC 30-34,9
+//Obesidade grau II (Severa) IMC 35-39,9
+//Obesidade grau III (Mórbida) IMC >40
+//---------------------------------------//
+// Para o calculo do IMC usa a seguinte forma: imc=massa/altura^2
+var
+ALTURA, PESO, IMC : REAL
+inicio
+ESCREVAL("-----------------------------------------------------")
+ESCREVAL("VAMOS CALCULAR O SEU IMC ? HEHEHE")
+ESCREVAL("-----------------------------------------------------")
+ESCREVAL("QUAL É A SUA ALTURA EM METROS (M)? ")
+LEIA(ALTURA)
+ESCREVAL("QUAL É O SEU PESO EM (KG)? ")
+LEIA(PESO)
+IMC <- (PESO/ALTURA^2)
+ESCREVAL("------------------------------------------------------")
+ESCREVAL("SEU IMC É: ", IMC:5:2)
+ESCREVAL("------------------------------------------------------")
+SE (IMC < 18.5)ENTAO
+   ESCREVAL("VOCÊ ESTA ABAIXO DO PESO")
+   FIMSE
+SE (IMC >= 18.5) E (IMC <= 24.9)ENTAO
+   ESCREVAL("VOCE ESTA NO PESO IDEAL")
+   FIMSE
+SE (IMC >= 25) E (IMC <= 29.9) ENTAO
+   ESCREVAL("VOCE ESTA COM EXCESSO DE PESO")
+   FIMSE
+SE (IMC > 30) ENTAO
+   ESCREVAL("VOCE ESTA NA OBESIDADE")
+   FIMSE
+SE (IMC >= 30) E (IMC <= 34.9)ENTAO
+   ESCREVAL("VOCE ESTA NA OBESIDADE GRAU I (MODERADA)")
+   FIMSE
+SE (IMC >= 35) E (IMC <= 39.9)ENTAO
+   ESCREVAL("VOCE ESTA NA OBESIDADE GRAU II (SEVERA)")
+   FIMSE
+SE (IMC > 40)ENTAO
+   ESCREVAL("VOCE ESTA NA OBESIDADE GRAU III (MÓRBIDA)")
+FIMSE
+ESCREVAL("--------------------------------------------------------")
+fimalgoritmo
