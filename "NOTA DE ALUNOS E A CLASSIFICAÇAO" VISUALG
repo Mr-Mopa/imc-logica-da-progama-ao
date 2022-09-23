@@ -1,0 +1,42 @@
+Algoritmo "NOTA DE ALUNOS E A CLASSIFICAÇAO"
+Var
+
+N1, N2,N3,N4, M: REAL
+
+Inicio
+      ESCREVA("QUAL É A SUA PRIMEIRA NOTA? ")
+      LEIA(N1)
+      ESCREVA("QUAL É A SUA SEGUNDA NOTA? ")
+      LEIA(N2)
+      ESCREVA("QUAL É A SUA TERCEIRA NOTA? ")
+      LEIA(N3)
+      ESCREVA("QUAL É A SUA QUARTA NOTA?")
+      LEIA(N4)
+      M <- (N1+N2+N3+N4)/4
+      ESCREVAL(" A SUA MEDIA É: ", M)
+      SE(M <= 10) E (M >= 9.0)ENTAO
+           ESCREVAL("VOCÊ É UM ALUNO CLASSIFICAÇÃO (A)")
+      SENAO
+      SE(M <= 8.9) E (M >= 8.0)ENTAO
+           ESCREVAL("VOCÊ É UM ALUNO CLASSIFICAÇÃO (B)")
+      SENAO
+      SE(M <= 7.9) E (M >= 7.0)ENTAO
+           ESCREVAL("VOCÊ É UM ALUNO CLASSIFICAÇÃO (C)")
+      SENAO
+      SE(M <= 6.9) E (M >= 6.0)ENTAO
+           ESCREVAL("VOCÊ É UM ALUNO CLASSIFICAÇÃO (D)")
+      SENAO
+      SE(M <= 5.9) E (M >= 5.0)ENTAO
+           ESCREVAL("VOCÊ É UM ALUNO CLASSIFICAÇÃO (E)")
+           SENAO
+      SE(M < 5)ENTAO
+           ESCREVAL("VOCÊ É UM ALUNO CLASSIFICAÇÃO (F)")
+      FIMSE
+                          FIMSE
+                     FIMSE
+                FIMSE
+           FIMSE
+
+      FIMSE
+
+Fimalgoritmo
